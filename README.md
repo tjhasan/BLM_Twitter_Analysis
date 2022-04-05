@@ -52,4 +52,4 @@ The results of the script should appear in the file `./results/<filename>.txt` w
 
 In the resulting file, every line will contain a list of strings seperated by a comma. This is the resulting data for each tweet. This data is organized with the following format:
 
-`<Text_Body> , <list_of_hashtags> , <number_of_retweets> , <number_of_likes> , <is_a_retweet> , <is_a_quote>`
+`<Text_Body> , <hashtag_list> , <num_of_retweets> , <num_of_likes> , <is_a_retweet> , <is_a_quote>`
