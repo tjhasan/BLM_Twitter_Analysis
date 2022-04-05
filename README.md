@@ -5,9 +5,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -25,26 +22,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+Todo
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -55,37 +35,27 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+Ensure you have the following python library installed:
+* requests_html
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Before running the script, make sure you have done the following:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+* Downloaded a Twitter Dataset as described in the following project repo: [blm_twitter_corpus](https://github.com/sjgiorgi/blm_twitter_corpus)
+* In the same directory as script.py, you need to have a directory called `results`.
+
+Given that you have the above, run the script using the following command:
+
+```sh
+python script.py <year and month directory>
+```
+The `year and month directory` should be in the format: `YYYY_MM_DD`. If you have gathered the Twitter Dataset from the above repository correctly, then this should be no problem.
+
+Make sure `script.py`, the `YYYY_MM_DD` dataset, and the `results` directory are all in the same directory before running the script.
+
+Please understand that due to the large size of the dataset, the script may run for a long time. Consider creating parallel windows to run in the background in order to prevent he script from ending prematurely.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
