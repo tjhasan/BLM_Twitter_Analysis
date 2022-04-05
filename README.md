@@ -56,4 +56,4 @@ In the resulting file, every line will contain a list of strings seperated by a 
 
 Here is a breakdown of this data:
 * Text_Body
-* * The body of the tweet. Will also include the hashtags used.
+    * The body of the tweet. Will also include the hashtags used.
