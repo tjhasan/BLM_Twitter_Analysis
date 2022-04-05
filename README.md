@@ -52,8 +52,27 @@ The results of the script should appear in the file `./results/<filename>.txt` w
 
 In the resulting file, every line will contain a list of strings seperated by a comma. This is the resulting data for each tweet. This data is organized with the following format:
 
-`<Text_Body> , <hashtag_list> , <num_of_retweets> , <num_of_likes> , <is_a_retweet> , <is_a_quote>`
+`<text_body> , <hashtag_list> , <num_of_retweets> , <num_of_likes> , <is_a_retweet> , <is_a_quote>`
 
 Here is a breakdown of this data:
-* Text_Body
+* `text_body`
     * The body of the tweet. Will also include the hashtags used.
+* `hashtag_list`
+    * A comma seperated list of the all the hashtags in the given tweet body.
+    * Please note that every string in this list will always start with the character `#`.
+* `num_of_retweets`
+    * The number of retweets the given tweet received.
+* `num_of_likes`
+    * The number of likes the given tweet received.
+* `is_a_retweet`
+    * Will always either be true or false. 
+    * Signifies if the given tweet is a retweet
+* `is_a_retweet`
+    * Will always either be true or false. 
+    * Signifies if the given tweet is a quote
+
+You may see the following instances in the data:
+
+`, , <int>, <int>, <bool>, <bool>`
+
+These instances simply show that the given tweet did not have any text or hashtags in its body.
