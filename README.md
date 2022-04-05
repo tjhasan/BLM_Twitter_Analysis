@@ -4,16 +4,17 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+        <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+        <a href="#prerequisites">Prerequisites</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+        <a href="#usage">Usage</a>
+    </li>
+    <li>
+        <a href="#results">Results</a>
+    </li>
   </ol>
 </details>
 
@@ -45,3 +46,5 @@ The `year and month directory` should be in the format: `YYYY_MM_DD`. If you hav
 Make sure `script.py`, the `YYYY_MM_DD` dataset, and the `results` directory are all in the same directory before running the script.
 
 Please understand that due to the large size of the dataset, the script may run for a long time. Consider creating parallel windows to run in the background in order to prevent he script from ending prematurely.
+
+## Results
