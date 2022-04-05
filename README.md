@@ -48,3 +48,8 @@ Make sure `script.py`, the `YYYY_MM_DD` dataset, and the `results` directory are
 Please understand that due to the large size of the dataset, the script may run for a long time. Consider creating parallel windows to run in the background in order to prevent he script from ending prematurely.
 
 ## Results
+The results of the script should appear in the file `./results/<filename>.txt` where `filename` was the original filename given from the dataset.
+
+In the resulting file, every line will contain a list of strings seperated by a comma. This is the resulting data for each tweet. This data is organized with the following format:
+
+`<Text_Body> , <list_of_hashtags> , <number_of_retweets> , <number_of_likes> , <is_a_retweet> , <is_a_quote>`
